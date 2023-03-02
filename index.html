@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papirogami</title>
+    <link rel="stylesheet" href="./assest/animaciones.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assest/mediaqueries.css">
+    <script src="https://kit.fontawesome.com/2466c7a100.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></head>
+<body>
+    <header>
+        <a href="#portada"><img class="logo-img"src="./assest/logo.png" alt="Logo de Papirogami"></a> 
+        <nav>
+            <div class="nav-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-lista">
+                <li><a class="nav-link" href="#portada">Portada</a></li>
+                <span class="nav-dividir"></span>
+                <li><a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <span class="nav-dividir"></span>
+                <li><a class="nav-link" href="#productos">Productos</a></li>
+                <span class="nav-dividir"></span>
+                <li><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="carrito">
+                <i class="fa-solid fa-cart-shopping carrito-icono"></i>
+                <div class="burbuja">0</div>
+            </div>
+            <div class="carrito-menu">
+                <h3 class="carrito-menu-h3">Su orden</h3>
+                <div class="carrito-menu-borde">
+                    <p>Productos</p>
+                    <div class="carrito-menu_cantidad_precio">
+                        <p>Cantidad</p>
+                        <p>Precio</p>
+                    </div>
+                </div>
+                <div class="carrito-producto"></div>
+                <span class="dividir"></span>
+                <div class="carrito-menu_total">
+                    <h3>Total:</h3>
+                    <h3 class="total"></h3>
+                </div>
+                <div class="carrito-menu-botones">
+                    <button class="boton-comprar">Comprar</button>
+                    <button class="boton-vaciar">Vaciar carrito</button>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+    <main class="main">
+        <section id="portada">
+            <h1 class="portada-titulo">Papirogami</h1>
+            <h2 class="portada-subtitulo">Tú solución en decoración al alcance de un plegado</h2>
+            <img class="portada-img"src="./assest/portada.png" alt="Grulla origami">
+        </section>
+        <section id="sobre-nosotros">
+            <div class="nosotros-texto">
+                <h2>Sobre Nosotros</h2>
+                <p>Papirogami es una emprendimiento dedicado a hacer y crear objetos decorativos con papel (Origami) logrando asi brindarte una solucion estetica y economica en decoraciones y/o souvenirs,
+                    tenemos un gran compromiso con la sustentabilidad y el medio ambiente, nuestros productos son realizados en base a papeles reciclados por lo que el catalogo suele ser variado y limitado, Por esto mismo le recomendamos no esperar demasiado para su compra ya que el stock se agota rapidamente.
+                </p>
+                <span>Gracias por confiar en Papirogami</span>
+            </div>
+            <img class="nosotros-img"src="./assest/sobre_nosotros.png" alt="Origami Gato">
+        </section>
+        <section id="productos">
+            <h2 class="producto-h2">PRODUCTOS</h2>
+            <div class="links">
+                <p>Antes de realizar su compra necesita <a href="./assest/login.html">Logearse</a></p>
+                <p>Si no tiene cuenta puede <a href="./assest/register.html">Registrarse</a></p>
+                
+            </div>
+
+            <div class="productos-categorias">
+                <button class="categoria activo">Todos</button>
+                <button class="categoria" data-categoria="kusudama">Kusudama</button>
+                <button class="categoria" data-categoria="estrella">Estrella</button>
+                <button class="categoria" data-categoria="icosaedro">Icosaedro</button>
+            </div>
+            <div class="producto-contenedor"></div>
+            <button class="productos-ver_mas ">Ver mas</button>
+        </section>
+        <section id="contacto">
+            <div class="contacto-arriba">
+                <img src="./assest/contacto.png" alt="Dinosaurio papiroflexia">
+                <div class="contactenos">
+                    <h2>CONTACTENOS</h2>
+                    <div class="contactenos-lista">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+54 011 2679-9185</p>
+                    </div>
+                    <div class="contactenos-lista">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>papirogami@outlook.com</p>
+                    </div>
+                    <div class="contactenos-lista">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Viamonte 242, Lomas de Zamora, Buenos Aires </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contacto-abajo">
+                <h2>¿Donde encontrarnos?</h2>
+                <div class="contacto-abajo-map-img">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.8711968364055!2d-58.391922300000004!3d-34.758837299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2bf761b6ca9%3A0x94086afe9e206fbd!2sViamonte%20242%2C%20B1832AMF%20Lomas%20de%20Zamora%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1677543007951!5m2!1ses-419!2sar" width="400" height="300"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <img src="./assest/contacto_2.png" alt="Dinosaurio papirogami">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-facebook"></i>
+    </footer>
+    <div class="producto-agregado"></div>
+    <script src="./assest/data.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+@media (max-width: 992px) {
+    .portada-subtitulo{
+        max-width: 80%;
+        text-align: center;
+    }
+    .nav-menu{
+        display: flex;
+        font-size: 32px;
+        color: #499efe;
+        cursor: pointer;
+    }
+    .nav-lista{
+        position: absolute;
+        width: 70%;
+        top: 70px;
+        flex-direction: column;
+        right: 15%;
+        background-color: #fff;
+        padding: 40px 20px;
+        border-radius: 15px 0px 15px 15px;
+        gap:30px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display: none;
+    }
+    .nav-abrir-lista{
+        display: flex;
+    }
+    .nav-dividir{
+        display: flex;
+    }
+    .nav-link{
+        font-size: 28px;
+    }
+    .nosotros-texto{
+        width: 80%;
+        text-align: center;
+    }
+    .nosotros-texto p {
+        font-size: 20px;
+    }
+    .productos-categorias{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    .nosotros-img{
+        display: none;
+    }
+    .contacto-arriba img{
+        display: none;
+    }
+    .contactenos{
+        width: 90%;
+        text-align: center;
+    }
+    .contacto-abajo{
+        padding: 50px 0px;
+        gap: 30px;
+    }
+    .contacto-abajo-map-img img{
+        display: none;
+    }
+}
+@media (max-width: 500px){
+    .portada-img {
+        width: 350px;
+    }
+    .portada-subtitulo{
+        font-size: 24px;
+    }
+} 
