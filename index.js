@@ -178,7 +178,7 @@ const mostrarMensaje = (mensaje) => {
     productoAgregado.textContent = mensaje;
     setTimeout(() =>{
         productoAgregado.classList.remove("producto-agregado-mostrar");
-    },2500);
+    },3000);
 };
 
 const sumarBurbuja = () =>{

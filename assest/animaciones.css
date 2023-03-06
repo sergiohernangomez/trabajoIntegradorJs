@@ -10,6 +10,18 @@ html{
         transform: translateY(0px);
     }
 }
+@keyframes subeMenos{
+    0%{
+        transform: translateY(70px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(70px);
+    }
+
+}
 @keyframes cae{
  from{
     transform: translateY(-60px);
@@ -51,8 +63,8 @@ html{
     animation-delay: 0.5s;
 }
 .portada-img{
-    animation: sube 1.2s ease-in, opacidad 1.2s ease-in forwards;
-    animation-delay: 1s;
+    animation: opacidad 1.5s ease-in forwards;
+    animation-delay: 1.5s;
 }
 /*header{
     animation: opacidad 1s ease-in;
@@ -93,4 +105,7 @@ html{
 }
 body{
     animation: opacidad 0.8s ease-in forwards;
+}
+.producto-agregado-mostrar{
+    animation: subeMenos 3s ease-in forwards;
 }

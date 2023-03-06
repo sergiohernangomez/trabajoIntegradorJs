@@ -19,11 +19,17 @@
         </a>
     </header>
     <main class="fondo-login">
-        <form class="form__contenedor">
-            <H1 class="form__titulo">Ingresar a su cuenta</H1>
-            <input type="mail" placeholder="Ingrese su mail" class="form-input login">
-            <input type="password" placeholder="ingrese su contraseña" class="form-input login">
-            <a href="../index.html" class="form-boton login-boton">Ingresar</a>
+        <form class="form_contenedor" id="formulario">
+            <H1 class="form_titulo">Ingresar a su cuenta</H1>
+            <div class="form-input-contenedor">
+                <input type="mail" placeholder="Ingrese su mail" class="mail form-input login">
+                <small></small>
+            </div>
+            <div class="form-input-contenedor">
+                <input type="password" placeholder="ingrese su contraseña" class="contraseña form-input login">
+                <small></small>
+            </div>
+            <input type="submit" class="form-boton login-boton" value="ingresar">
         </form>
         <p class="redireccion">Si no tienes cuenta <a href="./register.html" class="redireccion__link">regitrate</a></p>
     </main>
@@ -31,6 +37,7 @@
         <i class="fa-brands fa-square-instagram"></i>
         <i class="fa-brands fa-linkedin"></i>
         <i class="fa-brands fa-facebook"></i>
-    </footer>    
+    </footer>   
+    <script src="./formulario.js"></script> 
 </body>
 </html>

@@ -19,13 +19,25 @@
         </a>
     </header>
     <main>
-        <form class="form__contenedor">
-            <h1 class="form__titulo">Crea tu cuenta</h1>
-            <input type="text" placeholder="nombre y apellido" class="form-input">
-            <input type="mail" placeholder="Mail" class="form-input">
-            <input type="password" placeholder="Contraseña" class="form-input">
-            <input type="tel" placeholder="Telefono" class="form-input">
-            <a href="../index.html" class="form-boton ">Registrarse</a>
+        <form class="form_contenedor" id="formulario">
+            <h1 class="form_titulo">Crea tu cuenta</h1>
+            <div class="form-input-contenedor">
+                <input type="text" placeholder="nombre y apellido" class="form-input">
+                <small></small>
+            </div>
+            <div class="form-input-contenedor">
+                <input type="mail" placeholder="Mail" class="mail form-input">
+                <small></small>
+            </div>
+            <div class="form-input-contenedor">
+                <input type="password" placeholder="Contraseña" class="contraseña form-input">
+                <small></small>        
+            </div>
+            <div class="form-input-contenedor">
+                <input type="tel" placeholder="Telefono" class="telefono form-input">
+                <small></small>
+            </div>
+            <input type="submit" class="form-boton" value="Registrarse">
         </form>
         <p class="redireccion">Si ya tienes cuenta <a href="./login.html" class="redireccion__link">ingresa</a></p>
     </main>
@@ -33,6 +45,7 @@
             <i class="fa-brands fa-square-instagram"></i>
             <i class="fa-brands fa-linkedin"></i>
             <i class="fa-brands fa-facebook"></i>
-    </footer> 
+    </footer>
+    <script src="./formulario.js"></script> 
 </body>
 </html>
