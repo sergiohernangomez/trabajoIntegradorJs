@@ -2,13 +2,13 @@ const formulario = document.getElementById("formulario")
 const mail = document.querySelector(".mail");
 const contraseña = document.querySelector(".contraseña");
 const telefono = document.querySelector(".telefono");
+const nombreUsuario = document.querySelector(".nombre-usuario")
 
 const mailREGEX = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
 const contraseñaREGEX = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,}$/;
 const telefonoREGEX = /^[0-9]{10}$/;
 
 const estaVacio = (valor) => valor === "";
-const entre = (length, min, max) => length > min && length < max;
 const mailValido = (mail) => mailREGEX.test(mail);
 const contraseñaValida = (contraseña) => contraseñaREGEX.test(contraseña);
 const telefonoValido = (telefono) => telefonoREGEX.test(telefono);
@@ -28,6 +28,18 @@ const mostrarAceptado = (input) =>{
     const errorContenedor = formContenedor.querySelector("small");
     errorContenedor.textContent = " ";
 };
+
+const checkearNombre = () =>{
+    let valid = false;
+    const nombreApellido = nombreUsuario.value.trim();
+    if(estaVacio(nombreApellido)){
+        mostrarError(nombreUsuario,"El nombre y apellido son obligatorios")
+    }else{
+        mostrarAceptado(nombreUsuario);
+        valid = true
+    }
+    return valid;
+}
 
 const checkearMail = () =>{
     let valid = false;
@@ -77,8 +89,9 @@ formulario.addEventListener("submit", (e) =>{
     const esMailValido = checkearMail();
     const esContraseñaValida = checkearContraseña();
     const esTelefonoValido = checkearTelefono();
+    const esNombreValido = checkearNombre();
 
-    const esFormValido = esMailValido && esContraseñaValida && esTelefonoValido;
+    const esFormValido = esMailValido && esContraseñaValida && esTelefonoValido && esNombreValido;
 
     if(esFormValido){
         formulario.submit();
